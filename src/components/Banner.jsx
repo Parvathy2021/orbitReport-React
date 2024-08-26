@@ -1,10 +1,15 @@
-export default function Banner(){
-    let pageTitle = "Orbit Report";
-    let instruction ="Click on the buttons to see the satellites in that orbit type";
+import React from 'react';
+import './styling.css';
+
+function Banner () {
     return (
-        <>
-        <header><h1> {pageTitle}</h1></header>
-        <p>{instruction}</p>
-        </>
+    <header className='header'>
+        <h1>Orbit Report</h1>
+        <p className='p'>
+            Click on the buttons to see the satellites in that orbit type.
+        </p>
+    </header>
     );
-}
+};
+
+ export default Banner;
